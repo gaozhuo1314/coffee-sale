@@ -1,0 +1,1061 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    border: 0;
+}
+@font-face {
+    font-family: "Hiragino";
+    src: url("../font/Hiragino.otf");
+}
+/*个人信息*/
+.center{
+    background: #f5f5f5;
+}
+.centerTitle{
+    width: 100%;
+    height: 0.88rem;
+    background: #303036;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+    font-family: Hiragino;
+}
+.centerBanner{
+    padding-top: 0.39rem;
+    width: 100%;
+    height: 2.84rem;
+    background: url("../images/bannerBg.jpg") no-repeat;
+    background-size: cover;
+}
+.centerBanner .centerImg{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1.43rem;
+    height: 1.43rem;
+    border-radius: 100%;
+    border: 4px solid #fff;
+}
+.centerBanner .centerImg img{
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+}
+.centerBanner .centerName{
+    color: #fff;
+    font-size: 0.32rem;
+    text-align: center;
+    margin-top: 0.25rem;
+    font-family: Hiragino;
+}
+.centerShadow{
+    height: 2.12rem;
+    width: 100%;
+    background: url("../images/shadow.png") no-repeat;
+    background-size: cover;
+    margin-top: -0.47rem;
+}
+.centerShadow span{
+    display: block;
+    font-size: 0.26rem;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    font-family: Hiragino;
+}
+.centerShadow .num{
+    font-size: 0.6rem;
+}
+.centerShadow .left{
+    float: left;
+    width: 2.88rem;
+    margin-left: 0.29rem;
+    padding-top: 0.42rem;
+}
+.centerShadow .right{
+    float: left;
+    width: 2.88rem;
+    padding-top: 0.42rem;
+}
+.centerUl{
+    width: 100%;
+    background: #fff;
+}
+.centerUl li{
+    position: relative;
+    margin-left: 0.3rem;
+    border-bottom: 1px solid #e6e6e6;
+    width: 5.83rem;
+    height: 0.89rem;
+}
+.centerUl li a{
+    float: left;
+    height: 0.89rem;
+    line-height: 0.89rem;
+    font-size: 0.28rem;
+    color: #333;
+    font-family: Hiragino;
+}
+.centerUl li span{
+    float: left;
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-left: 0.2rem;
+    margin-top: 0.3rem;
+    background-size: cover;
+    margin-right: 0.2rem;
+}
+.centerUl li span img{
+    float: left;
+    width: 0.3rem;
+    height: 0.3rem;
+}
+.centerUl li i{
+    position: absolute;
+    right: 0.2rem;
+    width: 0.11rem;
+    height: 0.2rem;
+}
+.centerUl li i img{
+    width: 100%;
+}
+/*vip*/
+.vipTitle{
+    height: 0.88rem;
+    background: #303036;
+    margin-bottom: 0.3rem;
+}
+.vipTitle i{
+    float: left;
+    width: 0.15rem;
+    height: 0.27rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+.vipTitle i img{
+    float: left;
+    width: 100%;
+}
+.vipTitle h1{
+    font-weight: normal;
+    height: 0.88rem;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+    font-family: Hiragino;
+}
+.vipCard{
+    margin: 0 auto;
+    width: 5.8rem;
+    height: 3rem;
+    margin-bottom: 3.9rem;
+    background: url("../images/vipCard.png") no-repeat;
+    background-size: cover;
+}
+.vipCard p{
+    font-size: 0.5rem;
+    color: #c99b3e;
+    font-family: Hiragino;
+    padding-top: 1.3rem;
+    padding-bottom: 0.2rem;
+    text-indent: 0.44rem;
+}
+.vipCard span{
+    float: right;
+    margin-right: 0.33rem;
+    color: #fff;
+    font-size: 0.26rem;
+    font-family: Hiragino;
+}
+.vipLogo{
+    margin: 0 auto;
+    width: 1.72rem;
+    height: 1.02rem;
+}
+.vipLogo img{
+    width: 100%;
+}
+/*意见反馈*/
+.idea{
+    background: #f5f5f5;
+}
+.ideaTitle{
+    height: 0.88rem;
+    background: #303036;
+    margin-bottom: 0.2rem;
+}
+.ideaTitle i{
+    float: left;
+    width: 0.15rem;
+    height: 0.27rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+.ideaTitle i img{
+    float: left;
+    width: 100%;
+}
+.ideaTitle h1{
+    font-weight: normal;
+    height: 0.88rem;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+    font-family: Hiragino;
+}
+.ideaContent{
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 0.29rem;
+}
+.ideaContent .ideaStyle{
+    float: left;
+    margin-top: 0.38rem;
+    width: 100%;
+    margin-left: 0.3rem;
+    font-size: 0.24rem;
+    color: #999;
+    font-family: Hiragino;
+    margin-bottom: 0.27rem;
+}
+.ideaUl{
+    float: left;
+    width: 5.85rem;
+    margin-left: 0.3rem;
+    padding-bottom: 0.29rem;
+    margin-bottom: 0.27rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+.ideaUl li{
+    float: left;
+    font-family: Hiragino;
+    font-size: 0.28rem;
+    color: #333;
+    width: 1.61rem;
+    height: 0.64rem;
+    text-align: center;
+    line-height: 0.64rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 0.44rem;
+}
+.ideaUl .special{
+    margin-right: 0;
+}
+.ideaContent textarea{
+    float: left;
+    width: 5.8rem;
+    height: 2.35rem;
+    margin-left: 0.3rem;
+    resize: none;
+    border: none;
+    outline: none;
+}
+.ideaContent textarea::-webkit-input-placeholder{
+    font-family: Hiragino;
+    font-size: 0.24rem;
+    color: #999;
+}
+.ideaContent textarea::-moz-placeholder{
+    font-family: Hiragino;
+    font-size: 0.24rem;
+    color: #999;
+}
+.ideaSubmit{
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    height: 0.9rem;
+    font-size: 0.32rem;
+    color: #b6924a;
+    font-family: Hiragino;
+    line-height: 0.9rem;
+}
+/*个人信息*/
+.info{
+    background: #f5f5f5;
+}
+.info .title{
+    font-family: Hiragino;
+}
+.info .button-link{
+    font-family: Hiragino;
+}
+.infoTitle{
+    height: 2.58rem;
+    background: #303036;
+    margin-bottom: 0.586rem;
+}
+.infoTitle h1{
+    margin: 0;
+}
+.infoTitle i{
+    float: left;
+    width: 0.44rem;
+    height: 0.79rem;
+    margin-top: 0.879rem;
+    margin-left: 0.879rem;
+}
+.infoTitle i img{
+    float: left;
+    width: 100%;
+}
+.infoTitle h1{
+    font-weight: normal;
+    height: 2.58rem;
+    font-size: 0.879rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2.58rem;
+    font-family: Hiragino;
+}
+.infoContent{
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 0.586rem;
+}
+.infoContent ul{
+    float: left;
+    margin-left: 6%;
+    width: 88%;
+}
+.infoContent ul li{
+    font-size: 0.8204rem;
+    font-family: Hiragino;
+    line-height: 2.6077rem;
+    color: #333;
+    height: 2.6077rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+.infoContent ul li .left{
+    float: left;
+}
+.infoContent ul li .right{
+    float: right;
+    height: 100%;
+}
+.infoContent ul li .infoImg{
+    width: 2.05rem;
+    height: 2.05rem;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-top: 0.264rem;
+}
+.infoContent ul li .infoImg img{
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+}
+.infoContent ul li .same input{
+    height: 100%;
+    float: right;
+    width: 5.86rem;
+    border: none;
+    outline: none;
+    text-align:right;
+}
+.infoContent ul li .arrow{
+    font-size: 0.26rem;
+    font-family: Hiragino;
+    color: #999;
+}
+.infoContent ul li .arrow input{
+    font-size: 0.762rem;
+    font-family: Hiragino;
+    color: #999;
+    text-align: right;
+    border: none;
+    outline: none;
+}
+.infoContent textarea{
+    margin-left: 0.879rem;
+    width: 16.994rem;
+    padding-top: 0.879rem;
+    resize: none;
+    height: 5.86rem;
+    border: none;
+    outline: none;
+}
+.infoContent textarea::-webkit-input-placeholder{
+    font-family: Hiragino;
+    font-size: 0.762rem;
+    color: #999;
+}
+.infoContent textarea::-moz-placeholder{
+    font-family: Hiragino;
+    font-size: 0.762rem;
+    color: #999;
+}
+.ideaConserve{
+    width: 100%;
+    height: 2.637rem;
+    font-size: 0.938rem;
+    color: #b6924a;
+    font-family: Hiragino;
+    text-align: center;
+    line-height: 2.637rem;
+    background: #fff;
+}
+/*在线下单*/
+.order{
+    background: #f5f5f5;
+}
+.orderTitle{
+    height: 0.88rem;
+    background: #303036;
+    margin-bottom: 0.2rem;
+}
+.orderTitle i{
+    float: left;
+    width: 0.15rem;
+    height: 0.27rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+.orderTitle i img{
+    float: left;
+    width: 100%;
+}
+.orderTitle h1{
+    font-weight: normal;
+    height: 0.88rem;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+    font-family: Hiragino;
+}
+.orderUl .mainLi{
+    position: relative;
+    margin-top: 0.19rem;
+    height: 2.1rem;
+    width: 100%;
+    background: #fff;
+}
+.orderUl .mainLi .orderImg{
+    float: left;
+    width: 0.58rem;
+    height: 1.72rem;
+    margin-top: 0.18rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.orderUl .mainLi h1{
+    font-weight: normal;
+    padding-top: 0.2rem;
+    font-family: Hiragino;
+    font-size: 0.32rem;
+    color: #333;
+    float: left;
+}
+.orderUl .mainLi p{
+    font-family: Hiragino;
+    font-size: 0.22rem;
+    color: #999;
+    float: left;
+    width: 4.5rem;
+}
+.starUl{
+    float: left;
+    width: 4.5rem;
+    margin: 0.05rem 0;
+}
+.starUl li{
+    float: left;
+    width: 0.21rem;
+    height: 0.21rem;
+    background: url("../images/star.png") no-repeat;
+    background-size: cover;
+    margin-right: 0.1rem;
+}
+.orderUl .mainLi .orderMoney{
+    float: left;
+    font-family: Hiragino;
+    font-size: 0.22rem;
+    color: #c99b3e;
+}
+.orderNum{
+    position: absolute;
+    bottom: 0.18rem;
+    right: 0.3rem;
+}
+.orderNum span{
+    float: left;
+    width: 0.47rem;
+    height: 0.47rem;
+
+}
+.orderNum .hide{
+    display: none;
+}
+.orderNum .minus{
+    background: url("../images/minus.png") no-repeat;
+    background-size: cover;
+}
+.orderNum .plus{
+    background: url("../images/plus.png") no-repeat;
+    background-size: cover;
+}
+.orderNum .number{
+    color: #333;
+    font-size: 0.28rem;
+    text-align: center;
+    line-height: 0.46rem;
+    font-family: Hiragino;
+}
+.orderTotal{
+    background: #fff;
+    width: 100%;
+    height: 0.9rem;
+    position: fixed;
+    bottom: 0;
+}
+.orderTotal .total{
+    float: left;
+    width: 68%;
+    font-size: 0.26rem;
+    color: #999;
+    font-family: Hiragino;
+    line-height: 0.9rem;
+
+}
+.orderTotal .total_a{
+    float: left;
+    margin-left: 0.33rem;
+}
+.orderTotal .total .turn{
+    font-size: 0.4rem;
+    color: #c99b3e;
+    line-height: 0.9rem;
+}
+.orderTotal .balance{
+    float: right;
+    width: 32%;
+    height: 0.9rem;
+    background: #c99b3e;
+}
+.orderTotal .balance a{
+    width: 100%;
+    height: 100%;
+    float: left;
+    color: #fff;
+    font-family: Hiragino;
+    font-size: 0.32rem;
+    line-height: 0.9rem;
+    text-align: center;
+ }
+/*结算中心*/
+.accounts{
+    background: #f5f5f5;
+}
+.accountsTitle{
+    height: 0.88rem;
+    background: #303036;
+}
+.accountsTitle i{
+    float: left;
+    width: 0.15rem;
+    height: 0.27rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+.accountsTitle i img{
+    float: left;
+    width: 100%;
+}
+.accountsTitle h1{
+    font-weight: normal;
+    height: 0.88rem;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+    font-family: Hiragino;
+}
+.accountsInfo{
+    position: relative;
+    width: 100%;
+    height: 2.24rem;
+    margin-bottom: 0.2rem;
+    background: #c99b3e url("../images/black-line.jpg") repeat-x bottom;
+}
+.accountsInfo .people{
+    float: left;
+    width: 90%;
+    margin-top: 0.25rem;
+    color: #fff;
+    font-size: 0.28rem;
+    font-family: Hiragino;
+    margin-left: 0.3rem;
+}
+.accountsInfo .people span{
+    display: inline-block;
+    margin-right: 0.3rem;
+}
+.accountsInfo .address{
+    float: left;
+    width: 84%;
+    color: #fff;
+    font-size: 0.24rem;
+    font-family: Hiragino;
+    margin-left: 0.3rem;
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
+}
+.accountsInfo a{
+    position: absolute;
+    right: 0.3rem;
+    top: 0.95rem;
+    width: 0.15rem;
+    height: 0.27rem;
+    background: url("../images/whitearrow.png") no-repeat;
+    background-size: cover;
+
+}
+.accountsInfo .promise{
+    float: left;
+    width: 90%;
+    color: #fff;
+    font-size: 0.24rem;
+    font-family: Hiragino;
+    margin-left: 0.3rem;
+}
+.accountsTotal{
+    text-align: center;
+    line-height: 0.9rem;
+    width: 100%;
+    background: #fff;
+    height: 0.9rem;
+    font-size: 0.26rem;
+    color: #333;
+    font-family: Hiragino;
+}
+
+.accountsTotal .number{
+    font-size: 0.32rem;
+    color: #c99b3e;
+}
+.accountsDetail{
+    position: relative;
+    width: 100%;
+    height: 1.81rem;
+}
+.accountsDetail img{
+    float: left;
+    margin-top: 0.3rem;
+    margin-left: 0.55rem;
+    width: 0.63rem;
+    height: 1.25rem;
+    margin-right: 0.35rem;
+}
+.accountssame{
+    font-size: 0.26rem;
+    color: #333;
+    font-family: Hiragino;
+}
+.accountsDetail .accountslacation{
+    padding-top: 0.43rem;
+}
+.accountsprice{
+    font-size: 0.22rem;
+    font-family: Hiragino;
+    color: #c99b3e;
+}
+.accountsprice span{
+    font-size: 0.26rem;
+}
+.accountsNum{
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0.3rem;
+}
+.accountsNum span{
+    float: left;
+    width: 0.46rem;
+    height: 0.46rem;
+    color: #333;
+    font-size: 0.28rem;
+    line-height: 0.46rem;
+    text-align: center;
+    font-family: Hiragino;
+}
+.accountsNum .accountsminus{
+    background: url("../images/minus.png") no-repeat;
+    background-size: cover;
+}
+.accountsNum .accountsplus{
+    background: url("../images/plus.png") no-repeat;
+    background-size: cover;
+}
+.acStyle{
+    width: 100%;
+    background: #fff;
+    height: 0.9rem;
+}
+.acStyle .left{
+    float: left;
+    font-family: Hiragino;
+    font-size: 0.28rem;
+    color: #333;
+    line-height: 0.9rem;
+    margin-left: 0.3rem;
+}
+.acStyle .right{
+    float: right;
+    font-family: Hiragino;
+    font-size: 0.28rem;
+    color: #333;
+    line-height: 0.9rem;
+    margin-right: 0.3rem;
+}
+.acStyle .right i{
+    float: left;
+    width: 0.29rem;
+    height: 0.29rem;
+    margin-top: 0.3rem;
+    margin-right: 0.1rem;
+    background: url("../images/wechat.png") no-repeat;
+    background-size: cover;
+}
+/*全部订单*/
+.all{
+    background: #f5f5f5;
+}
+.allTitle{
+    height: 0.88rem;
+    background: #303036;
+}
+.allTitle i{
+    float: left;
+    width: 0.15rem;
+    height: 0.27rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+.allTitle i img{
+    float: left;
+    width: 100%;
+}
+.allTitle h1{
+    font-weight: normal;
+    height: 0.88rem;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+    font-family: Hiragino;
+}
+.ulAll{
+    float: left;
+    width: 100%;
+}
+.ulAll li{
+    width: 100%;
+    background: #fff;
+    height: 2.45rem;
+    margin-top: 0.17rem;
+}
+.ulAll li img{
+    float: left;
+    width: 0.39rem;
+    height: 1.13rem;
+    margin-top: 0.21rem;
+    margin-left: 0.33rem;
+}
+.ulAll li a{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.ulAll li .allnum{
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    font-size: 0.22rem;
+    color: #999;
+    font-family: Hiragino;
+    border-bottom: 1px solid #f5f5f5;
+}
+.ulAll .allsame{
+    float: right;
+    width: 80%;
+}
+.ulAll .allName{
+    margin-top: 0.25rem;
+    margin-bottom: 0.2rem;
+}
+.ulAll .allName h1{
+    font-weight: normal;
+    float: left;
+    font-size: 0.26rem;
+    color: #333;
+    font-family: Hiragino;
+}
+.ulAll .allName span{
+    float: right;
+    font-size: 0.26rem;
+    color: #333;
+    font-family: Hiragino;
+    margin-right: 0.3rem;
+}
+.allGray{
+    margin-bottom: 0.2rem;
+ }
+.allGray .allDate{
+    float: left;
+    font-family: Hiragino;
+    font-size: 0.22rem;
+    color: #999;
+}
+.allGray .number{
+    float: right;
+    font-family: Hiragino;
+    font-size: 0.22rem;
+    color: #999;
+    margin-right: 0.3rem;
+}
+.allTotal .num{
+    float: right;
+    font-family: Hiragino;
+    font-size: 0.22rem;
+    color: #333;
+    margin-right: 0.1rem;
+    padding-top: 0.05rem;
+}
+.allTotal .num span{
+    color: #c99b3e;
+}
+.allTotal .allPrice{
+    float: right;
+    font-family: Hiragino;
+    font-size: 0.22rem;
+    color: #333;
+    margin-right: 0.3rem;
+}
+.allTotal .allPrice span{
+    font-size: 0.26rem;
+    color: #c99b3e;
+}
+/*完成全部订单*/
+.finish{
+    background: #f5f5f5;
+}
+.finishTitle{
+    height: 0.88rem;
+    background: #303036;
+}
+.finishTitle i{
+    float: left;
+    width: 0.15rem;
+    height: 0.27rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+.finishTitle i img{
+    float: left;
+    width: 100%;
+}
+.finishTitle h1{
+    font-weight: normal;
+    height: 0.88rem;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+    font-family: Hiragino;
+}
+.finishall{
+    width: 100%;
+}
+.finishall div{
+    font-family: Hiragino;
+    font-size: 0.36rem;
+    color: #c99b3e;
+    width: 1.67rem;
+    height: 0.46rem;
+    margin: 0.63rem auto;
+    line-height: 0.46rem;
+}
+.finishall div img{
+    float: left;
+    width: 0.46rem;
+    height: 0.46rem;
+    margin-right: 0.05rem;
+}
+.finishorder{
+    width: 90.6%;
+    margin: 0 auto;
+    height: 0.68rem;
+    border: 1px dashed #e6e6e6;
+    margin-bottom: 0.27rem;
+    background: #fff;
+}
+.finishorder div{
+    text-align: center;
+    line-height: 0.68rem;
+    font-size: 0.26rem;
+    color: #333;
+    font-family: Hiragino;
+}
+.finishorder div span{
+    font-weight: bold;
+}
+.finishDetail{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 0.18rem;
+}
+.finishDetail .one{
+    border-bottom: 1px dashed #e6e6e6;
+    margin-left: 0.3rem;
+    width: 5.82rem;
+    height: 1.4rem;
+    padding-top: 0.3rem;
+}
+.finishDetail .one img{
+    float: left;
+    height: 1.12rem;
+    width: 0.37rem;
+    margin-right: 0.5rem;
+}
+.finishDetail .one .name{
+    font-size: 0.26rem;
+    color: #333;
+    font-family: Hiragino;
+    float: left;
+    width: 4.95rem;
+    margin-bottom: 0.3rem;
+}
+.finishDetail .one .name .left{
+    float: left;
+}
+.finishDetail .one .name .right{
+    float: right;
+}
+.finishDetail .one .number{
+    float: right;
+    font-family: Hiragino;
+    font-size: 0.22rem;
+    color: #999;
+}
+.finishDetail .two{
+    height: 0.66rem;
+    border-bottom: 1px dashed #e6e6e6;
+    margin-left: 0.3rem;
+    width: 5.82rem;
+}
+.finishDetail .two .left{
+    float: left;
+    font-size: 0.22rem;
+    font-family: Hiragino;
+    color: #333;
+    line-height: 0.66rem;
+}
+.finishDetail .two .right{
+    float: right;
+    font-size: 0.22rem;
+    font-family: Hiragino;
+    color: #333;
+    line-height: 0.66rem;
+}
+.finishDetail .three{
+    height: 0.86rem;
+    margin-left: 0.3rem;
+    width: 5.82rem;
+}
+.finishDetail .three .date{
+    float: left;
+    font-family: Hiragino;
+    color: #808080;
+    font-size: 0.22rem;
+    line-height: 0.86rem;
+}
+.finishDetail .three .right{
+    float: right;
+}
+.finishDetail .three .right div{
+    font-family: Hiragino;
+    font-size: 0.22rem;
+    color: #333;
+    line-height: 0.86rem;
+}
+.finishDetail .three .right .num span{
+    color: #c99b3e;
+}
+.finishDetail .three .right .num{
+    float: left;
+}
+.finishDetail .three .right .total{
+    float: right;
+    margin-left: 0.1rem;
+}
+.finishDetail .three .right .total span{
+    font-size: 0.26rem;
+    color: #c99b3e;
+}
+.finishget{
+    width: 100%;
+    background: #fff;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.18rem;
+}
+.finishget .same{
+    font-family: Hiragino;
+    color: #808080;
+    font-size: 0.22rem;
+    display: block;
+    margin-left: 0.3rem;
+}
+.finishget .finishinfo{
+    display: block;
+    margin-left: 0.3rem;
+    font-size: 0.26rem;
+    color: #333;
+    font-family: Hiragino;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+.finishget .finishinfo span{
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+
+.finishpost{
+    width: 100%;
+    background: #fff;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.18rem;
+}
+.finishpost .same{
+    font-family: Hiragino;
+    color: #808080;
+    font-size: 0.22rem;
+    display: block;
+    margin-left: 0.3rem;
+}
+.finishpost .finishinfo{
+    display: block;
+    margin-left: 0.3rem;
+    font-size: 0.26rem;
+    color: #333;
+    font-family: Hiragino;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+.finishpost .finishinfo span{
+    display: inline-block;
+    margin-right: 0.2rem;
+}

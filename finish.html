@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <title></title>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 50* (clientWidth / 320) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body class="finish">
+<div class="finishTitle">
+    <i><a href="all.html"><img src="images/vipArrow.png" alt=""/></a></i>
+    <h1>全部订单</h1>
+</div>
+<div class="finishall">
+    <div>
+        <img src="images/finish.png" alt=""/>已完成
+    </div>
+</div>
+<div class="finishorder">
+    <div>订单编号：<span>3345674</span></div>
+</div>
+<div class="finishDetail">
+    <div class="one">
+        <img src="images/coffee_a.jpg" alt=""/>
+        <div class="name"><span class="left">埃塞尔比亚西达莫</span><span class="right">¥125</span></div>
+        <div class="number">×2</div>
+    </div>
+    <div class="two">
+        <span class="left">运费</span>
+        <span class="right">0元</span>
+    </div>
+    <div class="three">
+        <span class="date">2016-12-12订单提交成功</span>
+        <div class="right">
+            <div class="num">共 <span>2</span> 件</div>
+            <div class="total">合计：<span>¥235</span></div>
+        </div>
+    </div>
+
+</div>
+<div class="finishget">
+    <span class="same">收货人</span>
+    <div class="finishinfo"><span>黄渤</span><span>15818579250</span></div>
+    <span class="same">蓝天幼儿园</span>
+</div>
+<div class="finishpost">
+    <span class="same">发货人</span>
+    <div class="finishinfo"><span>咖啡烘焙工厂</span><span>010-59777958</span></div>
+</div>
+</body>
+</html>

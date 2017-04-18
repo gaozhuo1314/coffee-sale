@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <title></title>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 50* (clientWidth / 320) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body class="all">
+<div class="allTitle">
+    <i><a href="index.html"><img src="images/vipArrow.png" alt=""/></a></i>
+    <h1>全部订单</h1>
+</div>
+<ul class="ulAll">
+    <li>
+        <a href="finish.html">
+            <div class="allnum"><span>订单编号：</span><span class="num">232323</span></div>
+            <img src="images/coffee_a.jpg" alt=""/>
+            <div class="allsame allName"><h1>埃塞俄比亚西达莫</h1><span>¥125</span></div>
+            <div class="allsame allGray"><span class="allDate">2017年1月18日</span><span class="number">×2</span></div>
+            <div class="allsame allTotal"><div class="allPrice">合计：<span>¥235</span></div><div class="num">共<span>2</span>件</div></div>
+        </a>
+    </li>
+    <li>
+        <a href="finish.html">
+            <div class="allnum"><span>订单编号：</span><span class="num">232323</span></div>
+            <img src="images/coffee_a.jpg" alt=""/>
+            <div class="allsame allName"><h1>埃塞俄比亚西达莫</h1><span>¥125</span></div>
+            <div class="allsame allGray"><span class="allDate">2017年1月18日</span><span class="number">×2</span></div>
+            <div class="allsame allTotal"><div class="allPrice">合计：<span>¥235</span></div><div class="num">共<span>2</span>件</div></div>
+        </a>
+    </li>
+</ul>
+</body>
+</html>

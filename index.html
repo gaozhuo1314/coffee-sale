@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <title></title>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 50* (clientWidth / 320) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body class="center">
+    <div class="centerTitle">
+        会员中心
+    </div>
+<div class="centerBanner">
+    <div class="centerImg">
+        <a href="information.html"><img src="" alt=""/></a>
+    </div>
+    <div class="centerName">梵高先生</div>
+</div>
+<div class="centerShadow">
+    <div class="left">
+        <a href="order.html">
+            <span>在线下单</span>
+            <span class="num">0</span>
+        </a>
+
+    </div>
+    <div class="right">
+        <a href="all.html">
+            <span>全部订单</span>
+            <span class="num">0</span>
+        </a>
+    </div>
+</div>
+<ul class="centerUl">
+    <li class="one"><span><img src="images/01.png" alt=""/></span><a href="vip.html">尊贵会员<i><img src="images/arrow.png" alt=""/></i></a></li>
+    <li class="two"><span><img src="images/02.png" alt=""/></span><a href="#">联系我们<i><img src="images/arrow.png" alt=""/></i></a></li>
+    <li class="three"><span><img src="images/03.png" alt=""/></span><a href="idea.html">意见反馈<i><img src="images/arrow.png" alt=""/></i></a></li>
+    <li class="four"><span><img src="images/04.png" alt=""/></span><a href="#">检查更新<i><img src="images/arrow.png" alt=""/></i></a></li>
+</ul>
+</body>
+</html>

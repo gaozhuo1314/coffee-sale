@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <title></title>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 50* (clientWidth / 320) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+
+</head>
+<body class="order">
+<div class="orderTitle">
+    <i><a href="index.html"><img src="images/vipArrow.png" alt=""/></a></i>
+    <h1>在线下单</h1>
+</div>
+<ul class="orderUl">
+    <li class="mainLi">
+        <img class="orderImg" src="images/coffee_a.jpg" alt=""/>
+        <h1>埃塞俄比亚西达莫</h1>
+        <p>柔和的肉桂以及柠檬的清香。柠檬以及李子的酸度，非常干净的回味。最佳饮用方法为滴</p>
+        <ul class="starUl">
+            <li class="one aa bb cc dd"></li>
+            <li class="two aa bb cc dd ee"></li>
+            <li class="three aa_a bb cc dd ee"></li>
+            <li class="four aa_a bb_b cc dd ee"></li>
+            <li class="five aa_a bb_b cc_c dd ee"></li>
+        </ul>
+        <div class="orderMoney">¥<span class="univalent">125</span></div>
+        <div class="orderNum">
+            <span class="minus hide"></span>
+            <span class="number hide">0</span>
+            <span class="plus"></span>
+        </div>
+    </li>
+    <li class="mainLi">
+        <img class="orderImg" src="images/coffee_b.jpg" alt=""/>
+        <h1>哥伦比亚 Cauca</h1>
+        <p>经典的咖啡，适用于任何做法。巧克力，干净顺滑的口感，橙子的酸味。</p>
+        <ul class="starUl">
+            <li class="one aa bb cc dd"></li>
+            <li class="two aa bb cc dd ee"></li>
+            <li class="three aa_a bb cc dd ee"></li>
+            <li class="four aa_a bb_b cc dd ee"></li>
+            <li class="five aa_a bb_b cc_c dd ee"></li>
+        </ul>
+        <div class="orderMoney">¥<span class="univalent">125</span></div>
+        <div class="orderNum">
+            <span class="minus hide"></span>
+            <span class="number hide">0</span>
+            <span class="plus"></span>
+        </div>
+    </li>
+</ul>
+<div class="orderTotal">
+    <div class="total"><span class="total_a">合计：</span><span class="turn">0</span></div>
+    <div class="balance"><a href="accounts.html">结算</a></div>
+</div>
+</body>
+</html>

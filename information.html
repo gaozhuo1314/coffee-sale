@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的生活</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <!--<script>-->
+        <!--(function (doc, win) {-->
+            <!--var docEl = doc.documentElement,-->
+                    <!--resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',-->
+                    <!--recalc = function () {-->
+                        <!--var clientWidth = docEl.clientWidth;-->
+                        <!--if (!clientWidth) return;-->
+                        <!--docEl.style.fontSize = 50* (clientWidth / 320) + 'px';-->
+                    <!--};-->
+            <!--if (!doc.addEventListener) return;-->
+            <!--win.addEventListener(resizeEvt, recalc, false);-->
+            <!--doc.addEventListener('DOMContentLoaded', recalc, false);-->
+        <!--})(document, window);-->
+    <!--</script>-->
+</head>
+<body  class="info">
+<div class="page-group">
+    <div class="page page-current">
+        <div class="infoTitle">
+            <i><a href="index.html"><img src="images/vipArrow.png" alt=""/></a></i>
+            <h1>个人信息</h1>
+        </div>
+        <div class="infoContent">
+            <ul>
+                <li><span class="left">头像</span><span class="infoImg right"><img src="" alt=""/></span></li>
+                <li><span class="left">姓名</span><span class="right">梵高先生</span></li>
+                <li><span class="left">手机</span><span class="right same"><input type="text" placeholder="请添加"/></span></li>
+                <li><span class="left">所在地区</span><span class="right arrow"><input type="text" id='city-picker' placeholder="请选择 >"/></span></li>
+            </ul>
+            <textarea placeholder="请填写详细地址"></textarea>
+        </div>
+        <div class="ideaConserve">保存地址</div>
+    </div>
+</div>
+
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script type="text/javascript" src="//g.alicdn.com/msui/sm/0.6.2/js/sm-city-picker.min.js" charset="utf-8"></script>
+<script>
+    $("#city-picker").cityPicker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+    <button class="button button-link pull-right close-picker">确定</button>\
+    <h1 class="title">选择您的地址</h1>\
+    </header>'
+    });
+</script>
+</body>
+</html>
